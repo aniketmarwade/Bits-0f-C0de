@@ -28,11 +28,9 @@ function BlogInner({ data, content, headings }) {
               <BsThreeDots />
             </p>
 
-            <article className="prose max-w-3xl mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl py-7 dark:prose-dark">
-  <MDXRemote {...content} />
-</article>
-
-
+            <article className="prose max-w-xs sm:max-w-sm md:max-w-prose lg:prose-lg py-7 dark:prose-dark ">
+              <MDXRemote {...content} />
+            </article>
 
             <div className="mt-3">
               <div className="flex items-center flex-col">
