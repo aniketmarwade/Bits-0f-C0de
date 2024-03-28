@@ -6,11 +6,7 @@ function BlogInner({ data, content, headings }) {
   return (
     <div className="mx-auto flex justify-center max-w-screen-xl px-6">
       <div className="rounded-lg shadow-lg bg-white dark:bg-gray-900 pb-8">
-        <img
-          className="object-cover w-full h-72"
-          src={data.HeaderImage}
-          alt="Article Image"
-        />
+       
 
         <div className="p-4">
           <div className="flex flex-col items-center">
@@ -32,9 +28,11 @@ function BlogInner({ data, content, headings }) {
               <BsThreeDots />
             </p>
 
-            <article className="prose max-w-xs sm:max-w-sm md:max-w-prose lg:prose-lg py-7 dark:prose-dark ">
-              <MDXRemote {...content} />
-            </article>
+            <article className="prose max-w-3xl mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl py-7 dark:prose-dark">
+  <MDXRemote {...content} />
+</article>
+
+
 
             <div className="mt-3">
               <div className="flex items-center flex-col">
